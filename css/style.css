@@ -1,0 +1,134 @@
+/* --- style.css --- */
+
+:root {
+    /* Define primary colors */
+    --primary-color: #0056b3; /* Dark blue for links/accents */
+    --text-color: #333;       /* Dark gray for main text */
+    --background-color: #f8f8f8; /* Light gray background */
+    --light-gray: #eee;      /* Very light gray for separators */
+    --max-width: 900px;
+}
+
+/* Basic Reset and Global Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Layout and Structure --- */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+/* --- Header and Navigation --- */
+header {
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--light-gray);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.lab-name {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -0.5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange links horizontally */
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* --- Main Content Styling --- */
+section {
+    padding: 40px 0;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* --- Specific Content Styles (Publications/People) --- */
+.publication-item {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.pub-title {
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.pub-authors {
+    font-style: italic;
+    color: #666;
+    font-size: 0.95em;
+}
+
+.person-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.person-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+.person-info h3 {
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+}
+
+.person-info p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--light-gray);
+    color: #888;
+    font-size: 0.85em;
+    margin-top: 40px;
+}
